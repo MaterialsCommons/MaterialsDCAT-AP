@@ -2,7 +2,8 @@
 name: Use Case
 about: Suggest a use case for MaterialsDCAT-AP
 title: "[UC] use case"
-labels: ''
+labels: 
+  - use case
 assignees: ''
 type: Feature
 
