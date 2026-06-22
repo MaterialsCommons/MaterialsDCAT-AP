@@ -1,0 +1,4145 @@
+@prefix : <https://w3id.org/materialsDCAT-AP/profile#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix dsv: <https://w3id.org/dsv#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix cardinality: <https://w3id.org/dsv/cardinality#>.
+@prefix requirement: <https://w3id.org/dsv/requirement-level#>.
+@prefix role: <https://w3id.org/dsv/class-role#>.
+@prefix prof: <http://www.w3.org/ns/dx/prof/>.
+
+
+<https://w3id.org/materialsDCAT-AP/profile#> a prof:Profile, dsv:ApplicationProfile.
+:Catalogue dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Catalogue>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:main.
+:CatalogueRecord dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:main.
+:DataService dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:specializes :CataloguedResource;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DataService>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:main.
+:Dataset dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:specializes :CataloguedResource;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:main.
+:DatasetSeries dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:specializes :CataloguedResource;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:main.
+:Distribution dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:main.
+:Relationship dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Relationship>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Relationship>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Relationship>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Relationship>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:main.
+:CataloguedResource dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#CataloguedResource>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CataloguedResource>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CataloguedResource>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CataloguedResource>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:main.
+:Role dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Role>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Role>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Role>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Role>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
+:Agent dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Agent>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Agent>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Agent>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Agent>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:main.
+:Concept dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Concept>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Concept>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Concept>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Concept>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
+:LegalResource dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#LegalResource>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#LegalResource>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#LegalResource>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#LegalResource>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
+:Location dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Location>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Location>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Location>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Location>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:main.
+:Document dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Document>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Document>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Document>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Document>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
+:LinguisticSystem dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#LinguisticSystem>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#LinguisticSystem>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#LinguisticSystem>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#LinguisticSystem>
+];
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
+:LicenceDocument dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#LicenceDocument>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#LicenceDocument>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#LicenceDocument>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#LicenceDocument>
+];
+    a dsv:ClassProfile;
+    dsv:classRole role:main.
+:RightsStatement dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#RightsStatement>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#RightsStatement>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#RightsStatement>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#RightsStatement>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
+:Standard dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Standard>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Standard>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Standard>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Standard>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
+:rdfs-Resource dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#rdfs-Resource>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#rdfs-Resource>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#rdfs-Resource>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#rdfs-Resource>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
+:ProvenanceStatement dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#ProvenanceStatement>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#ProvenanceStatement>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#ProvenanceStatement>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#ProvenanceStatement>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
+:Policy dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Policy>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Policy>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Policy>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Policy>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
+:PeriodOfTime dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#PeriodOfTime>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#PeriodOfTime>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#PeriodOfTime>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#PeriodOfTime>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
+:MediaTypeOrExtent dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#MediaTypeOrExtent>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#MediaTypeOrExtent>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#MediaTypeOrExtent>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#MediaTypeOrExtent>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
+:MediaType dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#MediaType>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#MediaType>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#MediaType>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#MediaType>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
+:Identifier dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Identifier>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Identifier>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Identifier>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Identifier>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
+:Geometry dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Geometry>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Geometry>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Geometry>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Geometry>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
+:Frequency dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Frequency>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Frequency>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Frequency>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Frequency>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
+:ConceptScheme dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#ConceptScheme>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#ConceptScheme>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#ConceptScheme>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#ConceptScheme>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
+:ChecksumAlgorithm dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#ChecksumAlgorithm>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#ChecksumAlgorithm>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#ChecksumAlgorithm>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#ChecksumAlgorithm>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
+:Attribution dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Attribution>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Attribution>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Attribution>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Attribution>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
+:Activity dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Activity>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Activity>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Activity>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Activity>
+];
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
+:Kind dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Kind>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Kind>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Kind>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Kind>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:main.
+:Checksum dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Checksum>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Checksum>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Checksum>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Checksum>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:main.
+:Instant dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Instant>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Instant>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Instant>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Instant>
+];
+    dsv:externalDocumentation <>;
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
+
+<https://w3id.org/materialsDCAT-AP/profile#Agent.type> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Agent.type>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Agent.type>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Agent.type>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Agent.type>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Agent;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Concept.
+
+<https://w3id.org/materialsDCAT-AP/profile#Catalogue.applicableLegislation> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.applicableLegislation>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.applicableLegislation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.applicableLegislation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.applicableLegislation>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Catalogue;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :LegalResource.
+
+<https://w3id.org/materialsDCAT-AP/profile#Catalogue.catalogue> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.catalogue>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.catalogue>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.catalogue>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.catalogue>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Catalogue;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Catalogue.
+
+<https://w3id.org/materialsDCAT-AP/profile#Catalogue.creator> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.creator>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.creator>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.creator>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.creator>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Catalogue;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Agent.
+
+<https://w3id.org/materialsDCAT-AP/profile#Catalogue.dataset> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.dataset>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.dataset>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.dataset>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.dataset>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Catalogue;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Dataset.
+
+<https://w3id.org/materialsDCAT-AP/profile#Catalogue.geographicalCoverage> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.geographicalCoverage>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.geographicalCoverage>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.geographicalCoverage>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.geographicalCoverage>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Catalogue;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Location.
+
+<https://w3id.org/materialsDCAT-AP/profile#Catalogue.hasPart> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.hasPart>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.hasPart>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.hasPart>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.hasPart>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Catalogue;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Catalogue.
+
+<https://w3id.org/materialsDCAT-AP/profile#Catalogue.homepage> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.homepage>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.homepage>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.homepage>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.homepage>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Catalogue;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Document.
+
+<https://w3id.org/materialsDCAT-AP/profile#Catalogue.language> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.language>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.language>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.language>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.language>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Catalogue;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :LinguisticSystem.
+
+<https://w3id.org/materialsDCAT-AP/profile#LicenseDocument.type> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#LicenseDocument.type>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#LicenseDocument.type>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#LicenseDocument.type>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#LicenseDocument.type>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :LicenceDocument;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Concept.
+
+<https://w3id.org/materialsDCAT-AP/profile#Catalogue.licence> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.licence>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.licence>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.licence>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.licence>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Catalogue;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :LicenceDocument.
+
+<https://w3id.org/materialsDCAT-AP/profile#Catalogue.publisher> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.publisher>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.publisher>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.publisher>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.publisher>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:11;
+    dsv:domain :Catalogue;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Agent.
+
+<https://w3id.org/materialsDCAT-AP/profile#Catalogue.record> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.record>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.record>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.record>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.record>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Catalogue;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :CatalogueRecord.
+
+<https://w3id.org/materialsDCAT-AP/profile#Catalogue.service> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.service>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.service>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.service>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.service>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Catalogue;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :DataService.
+
+<https://w3id.org/materialsDCAT-AP/profile#Catalogue.temporalCoverage> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.temporalCoverage>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.temporalCoverage>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.temporalCoverage>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.temporalCoverage>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Catalogue;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :PeriodOfTime.
+
+<https://w3id.org/materialsDCAT-AP/profile#Catalogue.themes> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.themes>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.themes>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.themes>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.themes>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Catalogue;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :ConceptScheme.
+
+<https://w3id.org/materialsDCAT-AP/profile#CatalogueRecord.applicationProfile> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.applicationProfile>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.applicationProfile>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.applicationProfile>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.applicationProfile>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :CatalogueRecord;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Standard.
+
+<https://w3id.org/materialsDCAT-AP/profile#CatalogueRecord.changeType> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.changeType>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.changeType>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.changeType>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.changeType>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :CatalogueRecord;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Concept.
+
+<https://w3id.org/materialsDCAT-AP/profile#CatalogueRecord.language> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.language>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.language>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.language>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.language>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :CatalogueRecord;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :LinguisticSystem.
+
+<https://w3id.org/materialsDCAT-AP/profile#CatalogueRecord.primaryTopic> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.primaryTopic>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.primaryTopic>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.primaryTopic>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.primaryTopic>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:11;
+    dsv:domain :CatalogueRecord;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :CataloguedResource.
+
+<https://w3id.org/materialsDCAT-AP/profile#CatalogueRecord.source> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.source>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.source>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.source>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.source>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :CatalogueRecord;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :CatalogueRecord.
+
+<https://w3id.org/materialsDCAT-AP/profile#Checksum.algorithm> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Checksum.algorithm>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Checksum.algorithm>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Checksum.algorithm>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Checksum.algorithm>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:11;
+    dsv:domain :Checksum;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :ChecksumAlgorithm.
+
+<https://w3id.org/materialsDCAT-AP/profile#DataService.accessRights> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DataService.accessRights>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.accessRights>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.accessRights>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.accessRights>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :DataService;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :RightsStatement.
+
+<https://w3id.org/materialsDCAT-AP/profile#DataService.applicableLegislation> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DataService.applicableLegislation>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.applicableLegislation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.applicableLegislation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.applicableLegislation>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :DataService;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :LegalResource.
+
+<https://w3id.org/materialsDCAT-AP/profile#DataService.conformsTo> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DataService.conformsTo>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.conformsTo>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.conformsTo>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.conformsTo>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :DataService;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Standard.
+
+<https://w3id.org/materialsDCAT-AP/profile#DataService.contactPoint> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DataService.contactPoint>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.contactPoint>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.contactPoint>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.contactPoint>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :DataService;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Kind.
+
+<https://w3id.org/materialsDCAT-AP/profile#DataService.documentation> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DataService.documentation>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.documentation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.documentation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.documentation>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :DataService;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Document.
+
+<https://w3id.org/materialsDCAT-AP/profile#DataService.endpointDescription> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DataService.endpointDescription>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.endpointDescription>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.endpointDescription>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.endpointDescription>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :DataService;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :rdfs-Resource.
+
+<https://w3id.org/materialsDCAT-AP/profile#DataService.endpointUrl> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DataService.endpointUrl>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.endpointUrl>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.endpointUrl>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.endpointUrl>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:1n;
+    dsv:domain :DataService;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :rdfs-Resource.
+
+<https://w3id.org/materialsDCAT-AP/profile#DataService.format> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DataService.format>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.format>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.format>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.format>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :DataService;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :MediaTypeOrExtent.
+
+<https://w3id.org/materialsDCAT-AP/profile#DataService.landingPage> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DataService.landingPage>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.landingPage>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.landingPage>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.landingPage>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :DataService;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Document.
+
+<https://w3id.org/materialsDCAT-AP/profile#DataService.licence> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DataService.licence>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.licence>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.licence>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.licence>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :DataService;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :LicenceDocument.
+
+<https://w3id.org/materialsDCAT-AP/profile#DataService.publisher> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DataService.publisher>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.publisher>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.publisher>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.publisher>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :DataService;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Agent.
+
+<https://w3id.org/materialsDCAT-AP/profile#DataService.servesDataset> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DataService.servesDataset>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.servesDataset>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.servesDataset>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.servesDataset>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :DataService;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Dataset.
+
+<https://w3id.org/materialsDCAT-AP/profile#DataService.theme> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DataService.theme>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.theme>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.theme>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.theme>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :DataService;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Concept.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.accessRights> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.accessRights>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.accessRights>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.accessRights>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.accessRights>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :RightsStatement.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.applicableLegislation> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.applicableLegislation>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.applicableLegislation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.applicableLegislation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.applicableLegislation>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :LegalResource.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.conformsTo> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.conformsTo>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.conformsTo>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.conformsTo>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.conformsTo>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Standard.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.contactPoint> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.contactPoint>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.contactPoint>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.contactPoint>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.contactPoint>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Kind.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.creator> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.creator>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.creator>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.creator>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.creator>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Agent.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.datasetDistribution> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.datasetDistribution>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.datasetDistribution>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.datasetDistribution>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.datasetDistribution>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Distribution.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.inSeries> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.inSeries>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.inSeries>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.inSeries>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.inSeries>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :DatasetSeries.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.landingPage> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.landingPage>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.landingPage>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.landingPage>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.landingPage>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Document.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.language> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.language>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.language>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.language>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.language>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :LinguisticSystem.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.otherIdentifier> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.otherIdentifier>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.otherIdentifier>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.otherIdentifier>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.otherIdentifier>
+];
+    dsv:externalDocumentation <>;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Identifier.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.provenance> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.provenance>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.provenance>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.provenance>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.provenance>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :ProvenanceStatement.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.publisher> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.publisher>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.publisher>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.publisher>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.publisher>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Dataset;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Agent.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.qualifiedAttribution> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.qualifiedAttribution>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.qualifiedAttribution>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.qualifiedAttribution>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.qualifiedAttribution>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Attribution.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.qualifiedRelation> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.qualifiedRelation>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.qualifiedRelation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.qualifiedRelation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.qualifiedRelation>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Relationship.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.relation> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.relation>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.relation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.relation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.relation>
+];
+    dsv:externalDocumentation <>;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :rdfs-Resource.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.sample> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.sample>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.sample>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.sample>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.sample>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Distribution.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.source> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.source>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.source>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.source>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.source>
+];
+    dsv:externalDocumentation <>;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Dataset.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.temporalCoverage> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.temporalCoverage>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.temporalCoverage>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.temporalCoverage>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.temporalCoverage>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :PeriodOfTime.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.theme> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.theme>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.theme>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.theme>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.theme>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Concept.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.type> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.type>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.type>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.type>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.type>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Concept.
+
+<https://w3id.org/materialsDCAT-AP/profile#DatasetSeries.applicableLegislation> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.applicableLegislation>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.applicableLegislation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.applicableLegislation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.applicableLegislation>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :DatasetSeries;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :LegalResource.
+
+<https://w3id.org/materialsDCAT-AP/profile#DatasetSeries.contactPoint> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.contactPoint>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.contactPoint>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.contactPoint>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.contactPoint>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :DatasetSeries;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Kind.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.frequency> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.frequency>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.frequency>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.frequency>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.frequency>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Frequency.
+
+<https://w3id.org/materialsDCAT-AP/profile#DatasetSeries.frequency> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.frequency>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.frequency>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.frequency>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.frequency>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :DatasetSeries;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Frequency.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.geographicalCoverage> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.geographicalCoverage>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.geographicalCoverage>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.geographicalCoverage>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.geographicalCoverage>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Location.
+
+<https://w3id.org/materialsDCAT-AP/profile#DatasetSeries.geographicalCoverage> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.geographicalCoverage>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.geographicalCoverage>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.geographicalCoverage>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.geographicalCoverage>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :DatasetSeries;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Location.
+
+<https://w3id.org/materialsDCAT-AP/profile#DatasetSeries.publisher> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.publisher>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.publisher>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.publisher>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.publisher>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :DatasetSeries;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Agent.
+
+<https://w3id.org/materialsDCAT-AP/profile#DatasetSeries.temporalCoverage> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.temporalCoverage>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.temporalCoverage>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.temporalCoverage>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.temporalCoverage>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :DatasetSeries;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :PeriodOfTime.
+
+<https://w3id.org/materialsDCAT-AP/profile#Location.geometry> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Location.geometry>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Location.geometry>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Location.geometry>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Location.geometry>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Location;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Geometry.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.wasGeneratedBy> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.wasGeneratedBy>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.wasGeneratedBy>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.wasGeneratedBy>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.wasGeneratedBy>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Activity.
+
+<https://w3id.org/materialsDCAT-AP/profile#Relationship.hadRole> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Relationship.hadRole>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Relationship.hadRole>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Relationship.hadRole>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Relationship.hadRole>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:1n;
+    dsv:domain :Relationship;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Role.
+
+<https://w3id.org/materialsDCAT-AP/profile#Relationship.relation> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Relationship.relation>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Relationship.relation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Relationship.relation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Relationship.relation>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:1n;
+    dsv:domain :Relationship;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :rdfs-Resource.
+
+<https://w3id.org/materialsDCAT-AP/profile#PeriodOfTime.beginning> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#PeriodOfTime.beginning>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#PeriodOfTime.beginning>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#PeriodOfTime.beginning>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#PeriodOfTime.beginning>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :PeriodOfTime;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Instant.
+
+<https://w3id.org/materialsDCAT-AP/profile#PeriodOfTime.end> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#PeriodOfTime.end>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#PeriodOfTime.end>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#PeriodOfTime.end>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#PeriodOfTime.end>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :PeriodOfTime;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Instant.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.accessService> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.accessService>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.accessService>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.accessService>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.accessService>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Distribution;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :DataService.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.accessUrl> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.accessUrl>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.accessUrl>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.accessUrl>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.accessUrl>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:1n;
+    dsv:domain :Distribution;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :rdfs-Resource.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.applicableLegislation> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.applicableLegislation>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.applicableLegislation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.applicableLegislation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.applicableLegislation>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Distribution;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :LegalResource.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.availability> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.availability>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.availability>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.availability>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.availability>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Distribution;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Concept.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.checksum> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.checksum>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.checksum>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.checksum>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.checksum>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Distribution;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Checksum.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.compressionFormat> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.compressionFormat>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.compressionFormat>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.compressionFormat>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.compressionFormat>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Distribution;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :MediaType.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.documentation> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.documentation>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.documentation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.documentation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.documentation>
+];
+    dsv:externalDocumentation <>;
+    dsv:domain :Distribution;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Document.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.downloadUrl> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.downloadUrl>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.downloadUrl>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.downloadUrl>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.downloadUrl>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Distribution;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :rdfs-Resource.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.format> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.format>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.format>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.format>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.format>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Distribution;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :MediaTypeOrExtent.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.hasPolicy> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.hasPolicy>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.hasPolicy>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.hasPolicy>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.hasPolicy>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Distribution;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Policy.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.language> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.language>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.language>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.language>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.language>
+];
+    dsv:externalDocumentation <>;
+    dsv:domain :Distribution;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :LinguisticSystem.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.licence> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.licence>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.licence>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.licence>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.licence>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Distribution;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :LicenceDocument.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.linkedSchemas> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.linkedSchemas>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.linkedSchemas>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.linkedSchemas>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.linkedSchemas>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Distribution;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Standard.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.mediaType> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.mediaType>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.mediaType>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.mediaType>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.mediaType>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Distribution;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :MediaType.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.packagingFormat> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.packagingFormat>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.packagingFormat>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.packagingFormat>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.packagingFormat>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Distribution;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :MediaType.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.rights> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.rights>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.rights>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.rights>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.rights>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Distribution;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :RightsStatement.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.status> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.status>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.status>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.status>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.status>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Distribution;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Concept.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.documentation> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.documentation>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.documentation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.documentation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.documentation>
+];
+    dsv:externalDocumentation <>;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Document.
+
+<https://w3id.org/materialsDCAT-AP/profile#Catalogue.rights> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.rights>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.rights>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.rights>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.rights>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Catalogue;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :RightsStatement.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.isReferencedBy> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.isReferencedBy>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.isReferencedBy>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.isReferencedBy>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.isReferencedBy>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :CataloguedResource.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.hasVersion> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.hasVersion>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.hasVersion>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.hasVersion>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.hasVersion>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Dataset.
+
+<https://w3id.org/materialsDCAT-AP/profile#Agent.name> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Agent.name>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Agent.name>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Agent.name>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Agent.name>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:1n;
+    dsv:domain :Agent;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#Concept.preferredLabel> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Concept.preferredLabel>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Concept.preferredLabel>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Concept.preferredLabel>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Concept.preferredLabel>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:1n;
+    dsv:domain :Concept;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#Catalogue.modificationDate> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.modificationDate>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.modificationDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.modificationDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.modificationDate>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Catalogue;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
+
+<https://w3id.org/materialsDCAT-AP/profile#Catalogue.releaseDate> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.releaseDate>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.releaseDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.releaseDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.releaseDate>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Catalogue;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
+
+<https://w3id.org/materialsDCAT-AP/profile#Catalogue.title> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.title>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.title>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.title>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.title>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:1n;
+    dsv:domain :Catalogue;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#CatalogueRecord.listingDate> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.listingDate>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.listingDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.listingDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.listingDate>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :CatalogueRecord;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
+
+<https://w3id.org/materialsDCAT-AP/profile#CatalogueRecord.modificationDate> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.modificationDate>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.modificationDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.modificationDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.modificationDate>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:11;
+    dsv:domain :CatalogueRecord;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
+
+<https://w3id.org/materialsDCAT-AP/profile#CatalogueRecord.title> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.title>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.title>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.title>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.title>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :CatalogueRecord;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#Checksum.checksumValue> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Checksum.checksumValue>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Checksum.checksumValue>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Checksum.checksumValue>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Checksum.checksumValue>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:11;
+    dsv:domain :Checksum;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#hexBinary>.
+
+<https://w3id.org/materialsDCAT-AP/profile#DataService.keyword> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DataService.keyword>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.keyword>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.keyword>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.keyword>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :DataService;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#DataService.title> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DataService.title>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.title>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.title>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.title>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:1n;
+    dsv:domain :DataService;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.identifier> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.identifier>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.identifier>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.identifier>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.identifier>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.keyword> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.keyword>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.keyword>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.keyword>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.keyword>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.modificationDate> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.modificationDate>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.modificationDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.modificationDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.modificationDate>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.releaseDate> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.releaseDate>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.releaseDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.releaseDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.releaseDate>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.spatialResolution> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.spatialResolution>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.spatialResolution>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.spatialResolution>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.spatialResolution>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#decimal>.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.temporalResolution> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.temporalResolution>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.temporalResolution>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.temporalResolution>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.temporalResolution>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#duration>.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.title> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.title>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.title>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.title>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.title>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:1n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.version> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.version>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.version>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.version>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.version>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.versionNotes> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.versionNotes>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.versionNotes>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.versionNotes>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.versionNotes>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#Catalogue.description> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.description>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.description>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.description>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.description>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:1n;
+    dsv:domain :Catalogue;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#CatalogueRecord.description> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.description>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.description>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.description>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.description>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :CatalogueRecord;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#DataService.description> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DataService.description>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.description>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.description>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.description>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :DataService;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#Dataset.description> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.description>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.description>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.description>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.description>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:1n;
+    dsv:domain :Dataset;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#DatasetSeries.description> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.description>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.description>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.description>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.description>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :DatasetSeries;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#DatasetSeries.modificationDate> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.modificationDate>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.modificationDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.modificationDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.modificationDate>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :DatasetSeries;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://w3id.org/materialsDCAT-AP/profile#DatasetSeries.releaseDate> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.releaseDate>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.releaseDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.releaseDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.releaseDate>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :DatasetSeries;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
+
+<https://w3id.org/materialsDCAT-AP/profile#DatasetSeries.title> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.title>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.title>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.title>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.title>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:1n;
+    dsv:domain :DatasetSeries;
+    dsv:requirementLevel requirement:mandatory;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#Location.bbox> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Location.bbox>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Location.bbox>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Location.bbox>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Location.bbox>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Location;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://w3id.org/materialsDCAT-AP/profile#Location.centroid> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Location.centroid>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Location.centroid>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Location.centroid>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Location.centroid>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Location;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://w3id.org/materialsDCAT-AP/profile#ConceptScheme.title> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#ConceptScheme.title>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#ConceptScheme.title>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#ConceptScheme.title>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#ConceptScheme.title>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:1n;
+    dsv:domain :ConceptScheme;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#Identifier.notation> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Identifier.notation>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Identifier.notation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Identifier.notation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Identifier.notation>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:11;
+    dsv:domain :Identifier;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://w3id.org/materialsDCAT-AP/profile#PeriodOfTime.endDate> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#PeriodOfTime.endDate>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#PeriodOfTime.endDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#PeriodOfTime.endDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#PeriodOfTime.endDate>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :PeriodOfTime;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
+
+<https://w3id.org/materialsDCAT-AP/profile#PeriodOfTime.startDate> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#PeriodOfTime.startDate>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#PeriodOfTime.startDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#PeriodOfTime.startDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#PeriodOfTime.startDate>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :PeriodOfTime;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.byteSize> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.byteSize>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.byteSize>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.byteSize>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.byteSize>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Distribution;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#nonNegativeInteger>.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.description> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.description>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.description>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.description>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.description>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Distribution;
+    dsv:requirementLevel requirement:recommended;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.modificationDate> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.modificationDate>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.modificationDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.modificationDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.modificationDate>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Distribution;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.releaseDate> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.releaseDate>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.releaseDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.releaseDate>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.releaseDate>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Distribution;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.spatialResolution> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.spatialResolution>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.spatialResolution>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.spatialResolution>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.spatialResolution>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Distribution;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#decimal>.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.temporalResolution> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.temporalResolution>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.temporalResolution>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.temporalResolution>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.temporalResolution>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:01;
+    dsv:domain :Distribution;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#duration>.
+
+<https://w3id.org/materialsDCAT-AP/profile#Distribution.title> dct:isPartOf <https://w3id.org/materialsDCAT-AP/profile#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.title>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.title>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.title>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.title>
+];
+    dsv:externalDocumentation <>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Distribution;
+    dsv:requirementLevel requirement:optional;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.

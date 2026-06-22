@@ -1,0 +1,1212 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<https://w3id.org/materialsDCAT-AP/profile#> rdfs:member <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape>, <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape>, <https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape>, <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape>, <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape>, <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape>, <https://w3id.org/materialsDCAT-AP/profile#dcat:RelationshipShape>, <https://w3id.org/materialsDCAT-AP/profile#dcat:ResourceShape>, <https://w3id.org/materialsDCAT-AP/profile#dcat:RoleShape>, <https://w3id.org/materialsDCAT-AP/profile#foaf:AgentShape>, <https://w3id.org/materialsDCAT-AP/profile#skos:ConceptShape>, <https://w3id.org/materialsDCAT-AP/profile#eli:LegalResourceShape>, <https://w3id.org/materialsDCAT-AP/profile#dcterms:LocationShape>, <https://w3id.org/materialsDCAT-AP/profile#foaf:DocumentShape>, <https://w3id.org/materialsDCAT-AP/profile#dcterms:LinguisticSystemShape>, <https://w3id.org/materialsDCAT-AP/profile#dcterms:LicenseDocumentShape>, <https://w3id.org/materialsDCAT-AP/profile#dcterms:RightsStatementShape>, <https://w3id.org/materialsDCAT-AP/profile#dcterms:StandardShape>, <https://w3id.org/materialsDCAT-AP/profile#rdfs:ResourceShape>, <https://w3id.org/materialsDCAT-AP/profile#dcterms:ProvenanceStatementShape>, <https://w3id.org/materialsDCAT-AP/profile#http://www.w3.org/ns/odrl/2/PolicyShape>, <https://w3id.org/materialsDCAT-AP/profile#dcterms:PeriodOfTimeShape>, <https://w3id.org/materialsDCAT-AP/profile#dcterms:MediaTypeOrExtentShape>, <https://w3id.org/materialsDCAT-AP/profile#dcterms:MediaTypeShape>, <https://w3id.org/materialsDCAT-AP/profile#adms:IdentifierShape>, <https://w3id.org/materialsDCAT-AP/profile#locn:GeometryShape>, <https://w3id.org/materialsDCAT-AP/profile#dcterms:FrequencyShape>, <https://w3id.org/materialsDCAT-AP/profile#skos:ConceptSchemeShape>, <https://w3id.org/materialsDCAT-AP/profile#spdx:ChecksumAlgorithmShape>, <https://w3id.org/materialsDCAT-AP/profile#prov:AttributionShape>, <https://w3id.org/materialsDCAT-AP/profile#prov:ActivityShape>, <https://w3id.org/materialsDCAT-AP/profile#vcard:KindShape>, <https://w3id.org/materialsDCAT-AP/profile#spdx:ChecksumShape>, <https://w3id.org/materialsDCAT-AP/profile#time:InstantShape>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#Catalogue>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/dcat#Catalog>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/77ba69eb> a sh:PropertyShape;
+    sh:name "modification date"@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/modified>;
+    sh:maxCount 1;
+    sh:datatype xsd:date.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/77ba69eb>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-1838f1f3> a sh:PropertyShape;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/issued>;
+    sh:maxCount 1;
+    sh:datatype xsd:date.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-1838f1f3>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/633ea716> a sh:PropertyShape;
+    sh:description "This property can be repeated for parallel language versions of the name."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/title>;
+    sh:datatype rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/633ea716>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-17e93906> a sh:PropertyShape;
+    sh:description "This property can be repeated for parallel language versions of the description."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/description>;
+    sh:datatype rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-17e93906>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-7002297d> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://data.europa.eu/r5r/applicableLegislation>;
+    sh:class <http://data.europa.eu/eli/ontology#LegalResource>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-7002297d>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-55fcca87> a sh:PropertyShape;
+    sh:name "catalogue"@en, "catalogo"@it, "catálogo"@es, "katalog"@cs, "katalog"@da;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#catalog>;
+    sh:class <http://www.w3.org/ns/dcat#Catalog>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-55fcca87>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-77f82fbb> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/creator>;
+    sh:maxCount 1;
+    sh:class <http://xmlns.com/foaf/0.1/Agent>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-77f82fbb>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-5c55f989> a sh:PropertyShape;
+    sh:description "As empty Catalogues are usually indications of problems, this property should be combined with the property service to implement an empty Catalogue check."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#dataset>;
+    sh:class <http://www.w3.org/ns/dcat#Dataset>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-5c55f989>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-ce4b458> a sh:PropertyShape;
+    sh:name "geographical coverage"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/spatial>;
+    sh:class <http://purl.org/dc/terms/Location>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-ce4b458>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/373ce36a> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/hasPart>;
+    sh:class <http://www.w3.org/ns/dcat#Catalog>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/373ce36a>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-ed7a302> a sh:PropertyShape;
+    sh:description ""@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://xmlns.com/foaf/0.1/homepage>;
+    sh:maxCount 1;
+    sh:class <http://xmlns.com/foaf/0.1/Document>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-ed7a302>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-57c00b37> a sh:PropertyShape;
+    sh:description "This property can be repeated if the metadata is provided in multiple languages."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/language>;
+    sh:class <http://purl.org/dc/terms/LinguisticSystem>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-57c00b37>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-769ae974> a sh:PropertyShape;
+    sh:name "licence"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/license>;
+    sh:maxCount 1;
+    sh:class <http://purl.org/dc/terms/LicenseDocument>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-769ae974>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-3270882b> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/publisher>;
+    sh:maxCount 1;
+    sh:class <http://xmlns.com/foaf/0.1/Agent>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-3270882b>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-49a2efd6> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#record>;
+    sh:class <http://www.w3.org/ns/dcat#CatalogRecord>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-49a2efd6>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/757312a7> a sh:PropertyShape;
+    sh:description "As empty Catalogues are usually indications of problems, this property should be combined with the property dataset to implement an empty Catalogue check."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#service>;
+    sh:class <http://www.w3.org/ns/dcat#DataService>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/757312a7>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/5646a024> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/temporal>;
+    sh:class <http://purl.org/dc/terms/PeriodOfTime>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/5646a024>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/23b6ea24> a sh:PropertyShape;
+    sh:name "tassonomia dei temi"@it, "taxonomie de thèmes"@fr, "taxonomie témat"@cs, "taxonomía de temas"@es, "themes"@en, "Ταξινομία θεματικών κατηγοριών."@el, "قائمة التصنيفات"@ar, "テーマ"@ja, "emnetaksonomi"@da;
+    sh:description "This property refers to a knowledge organization system used to classify the Catalogue's Datasets. It must have at least the value NAL:data-theme as this is the manatory controlled vocabulary for dcat:theme."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#themeTaxonomy>;
+    sh:class <http://www.w3.org/2004/02/skos/core#ConceptScheme>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/23b6ea24>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-1c7759c> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/rights>;
+    sh:class <http://purl.org/dc/terms/RightsStatement>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogShape/-1c7759c>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#CatalogueRecord>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/dcat#CatalogRecord>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape/-3159eb02> a sh:PropertyShape;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/issued>;
+    sh:maxCount 1;
+    sh:datatype xsd:date.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape/-3159eb02>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape/22f3789c> a sh:PropertyShape;
+    sh:name "modification date"@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/modified>;
+    sh:maxCount 1;
+    sh:datatype xsd:date.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape/22f3789c>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape/-37fb3ffb> a sh:PropertyShape;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/title>;
+    sh:datatype rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape/-37fb3ffb>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape/18dc30a9> a sh:PropertyShape;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/description>;
+    sh:datatype rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape/18dc30a9>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape/6ecbffd3> a sh:PropertyShape;
+    sh:name "application profile"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/conformsTo>;
+    sh:class <http://purl.org/dc/terms/Standard>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape/6ecbffd3>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape/1af1cf97> a sh:PropertyShape;
+    sh:name "change type"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/adms#status>;
+    sh:maxCount 1;
+    sh:class <http://www.w3.org/2004/02/skos/core#Concept>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape/1af1cf97>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape/-21ffbd06> a sh:PropertyShape;
+    sh:name "language"@en;
+    sh:description "This property can be repeated if the metadata is provided in multiple languages."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/language>;
+    sh:class <http://purl.org/dc/terms/LinguisticSystem>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape/-21ffbd06>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape/45ffccd3> a sh:PropertyShape;
+    sh:description "A catalogue record will refer to one entity in a catalogue. This can be either a Dataset or a Data Service. To ensure an unambigous reading of the cardinality the range is set to Catalogued Resource. However it is not the intend with this range to require the explicit use of the class Catalogued Record. As abstract class, an subclass should be used."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://xmlns.com/foaf/0.1/primaryTopic>;
+    sh:maxCount 1;
+    sh:class <http://www.w3.org/ns/dcat#Resource>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape/45ffccd3>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape/-1ca80a98> a sh:PropertyShape;
+    sh:name "source"@en;
+    sh:description "The original metadata that was used in creating metadata for the Dataset, Data Service or Dataset Series."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/source>;
+    sh:maxCount 1;
+    sh:class <http://www.w3.org/ns/dcat#CatalogRecord>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:CatalogRecordShape/-1ca80a98>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#DataService>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/dcat#DataService>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/-29a3c3f4> a sh:PropertyShape;
+    sh:name "keyword"@en, "klíčové slovo"@cs, "mot-clés "@fr, "palabra clave"@es, "parola chiave"@it, "λέξη-κλειδί"@el, "كلمة  مفتاحية "@ar, "キーワード/タグ"@ja, "nøgleord"@da;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/dcat#keyword>;
+    sh:datatype rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/-29a3c3f4>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/-4a8e00ec> a sh:PropertyShape;
+    sh:description "This property can be repeated for parallel language versions of the name."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/title>;
+    sh:datatype rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/-4a8e00ec>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/429ba878> a sh:PropertyShape;
+    sh:description "This property can be repeated for parallel language versions of the description."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/description>;
+    sh:datatype rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/429ba878>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/-24e1e7e2> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/accessRights>;
+    sh:maxCount 1;
+    sh:class <http://purl.org/dc/terms/RightsStatement>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/-24e1e7e2>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/5ae72181> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://data.europa.eu/r5r/applicableLegislation>;
+    sh:class <http://data.europa.eu/eli/ontology#LegalResource>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/5ae72181>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/21a064a4> a sh:PropertyShape;
+    sh:description "The standards referred here SHOULD describe the Data Service and not the data it serves. The latter is provided by the dataset with which this Data Service is connected. For instance the data service adheres to the OGC WFS API standard, while the associated dataset adheres to the INSPIRE Address data model."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/conformsTo>;
+    sh:class <http://purl.org/dc/terms/Standard>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/21a064a4>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/7e5a3e5a> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#contactPoint>;
+    sh:class <http://www.w3.org/2006/vcard/ns#Kind>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/7e5a3e5a>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/-155afe81> a sh:PropertyShape;
+    sh:name "documentation"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://xmlns.com/foaf/0.1/page>;
+    sh:class <http://xmlns.com/foaf/0.1/Document>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/-155afe81>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/54c0051c> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#endpointDescription>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/54c0051c>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/-3a010177> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#endpointURL>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/-3a010177>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/2229cbb5> a sh:PropertyShape;
+    sh:name "format"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/format>;
+    sh:class <http://purl.org/dc/terms/MediaTypeOrExtent>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/2229cbb5>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/58a3553c> a sh:PropertyShape;
+    sh:description "It is intended to point to a landing page at the original data service provider, not to a page on a site of a third party, such as an aggregator."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#landingPage>;
+    sh:class <http://xmlns.com/foaf/0.1/Document>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/58a3553c>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/18d14e> a sh:PropertyShape;
+    sh:name "licence"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/license>;
+    sh:maxCount 1;
+    sh:class <http://purl.org/dc/terms/LicenseDocument>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/18d14e>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/-36308cad> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/publisher>;
+    sh:maxCount 1;
+    sh:class <http://xmlns.com/foaf/0.1/Agent>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/-36308cad>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/-5bf5e6ab> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#servesDataset>;
+    sh:class <http://www.w3.org/ns/dcat#Dataset>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/-5bf5e6ab>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/-2974af10> a sh:PropertyShape;
+    sh:name "tema"@es, "tema"@it, "theme"@en, "thème"@fr, "téma"@cs, "Θέμα"@el, "التصنيف"@ar, "テーマ/カテゴリー"@ja, "emne"@da;
+    sh:description "A Data Service may be associated with multiple themes."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#theme>;
+    sh:class <http://www.w3.org/2004/02/skos/core#Concept>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DataServiceShape/-2974af10>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#Dataset>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/dcat#Dataset>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-2586c3fe> a sh:PropertyShape;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/identifier>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-2586c3fe>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-6965f627> a sh:PropertyShape;
+    sh:name "keyword"@en, "klíčové slovo"@cs, "mot-clés "@fr, "palabra clave"@es, "parola chiave"@it, "λέξη-κλειδί"@el, "كلمة  مفتاحية "@ar, "キーワード/タグ"@ja, "nøgleord"@da;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/dcat#keyword>;
+    sh:datatype rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-6965f627>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-20990b06> a sh:PropertyShape;
+    sh:name "modification date"@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/modified>;
+    sh:maxCount 1;
+    sh:datatype xsd:date.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-20990b06>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-3016ef24> a sh:PropertyShape;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/issued>;
+    sh:maxCount 1;
+    sh:datatype xsd:date.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-3016ef24>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/500d80ba> a sh:PropertyShape;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/dcat#spatialResolutionInMeters>;
+    sh:datatype xsd:decimal.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/500d80ba>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/2943e84> a sh:PropertyShape;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/dcat#temporalResolution>;
+    sh:datatype xsd:duration.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/2943e84>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/7b8acc67> a sh:PropertyShape;
+    sh:description "This property can be repeated for parallel language versions of the name."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/title>;
+    sh:datatype rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/7b8acc67>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/54ab779e> a sh:PropertyShape;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/dcat#version>;
+    sh:maxCount 1.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/54ab779e>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-6f88b3b4> a sh:PropertyShape;
+    sh:description "This property can be repeated for parallel language versions of the version notes."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/adms#versionNotes>;
+    sh:datatype rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-6f88b3b4>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-65341475> a sh:PropertyShape;
+    sh:description "This property can be repeated for parallel language versions of the description."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/description>;
+    sh:datatype rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-65341475>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-5e1be04f> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/accessRights>;
+    sh:maxCount 1;
+    sh:class <http://purl.org/dc/terms/RightsStatement>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-5e1be04f>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-25075ac> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://data.europa.eu/r5r/applicableLegislation>;
+    sh:class <http://data.europa.eu/eli/ontology#LegalResource>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-25075ac>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/700efbb1> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/conformsTo>;
+    sh:class <http://purl.org/dc/terms/Standard>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/700efbb1>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/3eec97a7> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#contactPoint>;
+    sh:class <http://www.w3.org/2006/vcard/ns#Kind>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/3eec97a7>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-2ccaf7ea> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/creator>;
+    sh:class <http://xmlns.com/foaf/0.1/Agent>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-2ccaf7ea>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-22dd82a0> a sh:PropertyShape;
+    sh:name "distribuce"@cs, "distribución"@es, "dataset distribution"@en, "distribution"@fr, "distribuzione"@it, "distribution"@da, "διανομή"@el, "توزيع"@ar, "データセット配信"@ja;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#distribution>;
+    sh:class <http://www.w3.org/ns/dcat#Distribution>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-22dd82a0>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/b9fd5ab> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#inSeries>;
+    sh:class <http://www.w3.org/ns/dcat#DatasetSeries>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/b9fd5ab>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-6fe0b8f1> a sh:PropertyShape;
+    sh:description "It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#landingPage>;
+    sh:class <http://xmlns.com/foaf/0.1/Document>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-6fe0b8f1>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/1826058> a sh:PropertyShape;
+    sh:description "This property can be repeated if there are multiple languages in the Dataset."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/language>;
+    sh:class <http://purl.org/dc/terms/LinguisticSystem>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/1826058>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/1822b7e0> a sh:PropertyShape;
+    sh:name "other identifier"@en;
+    sh:description "Examples are MAST/ADS [[MASTADS]], DOI [[DOI]], EZID [[EZID]] or W3ID [[W3ID]]."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/adms#identifier>;
+    sh:class <http://www.w3.org/ns/adms#Identifier>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/1822b7e0>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-38d2e75f> a sh:PropertyShape;
+    sh:name "provenance"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/provenance>;
+    sh:class <http://purl.org/dc/terms/ProvenanceStatement>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-38d2e75f>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/24dff66> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/publisher>;
+    sh:maxCount 1;
+    sh:class <http://xmlns.com/foaf/0.1/Agent>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/24dff66>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-2aeee73e> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/prov#qualifiedAttribution>;
+    sh:class <http://www.w3.org/ns/prov#Attribution>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-2aeee73e>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/59748dea> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#qualifiedRelation>;
+    sh:class <http://www.w3.org/ns/dcat#Relationship>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/59748dea>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-6454aaf1> a sh:PropertyShape;
+    sh:name "related resource"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/relation>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-6454aaf1>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-3713546f> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/adms#sample>;
+    sh:class <http://www.w3.org/ns/dcat#Distribution>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-3713546f>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/7e155174> a sh:PropertyShape;
+    sh:name "source"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/source>;
+    sh:class <http://www.w3.org/ns/dcat#Dataset>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/7e155174>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-420cd4cd> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/temporal>;
+    sh:class <http://purl.org/dc/terms/PeriodOfTime>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-420cd4cd>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-68e255c3> a sh:PropertyShape;
+    sh:name "tema"@es, "tema"@it, "theme"@en, "thème"@fr, "téma"@cs, "Θέμα"@el, "التصنيف"@ar, "テーマ/カテゴリー"@ja, "emne"@da;
+    sh:description "A Dataset may be associated with multiple themes."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#theme>;
+    sh:class <http://www.w3.org/2004/02/skos/core#Concept>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-68e255c3>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/30f138b9> a sh:PropertyShape;
+    sh:name "type"@en;
+    sh:description "A recommended controlled vocabulary data-type is foreseen."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/type>;
+    sh:class <http://www.w3.org/2004/02/skos/core#Concept>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/30f138b9>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/26036bac> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/accrualPeriodicity>;
+    sh:maxCount 1;
+    sh:class <http://purl.org/dc/terms/Frequency>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/26036bac>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/27d9d339> a sh:PropertyShape;
+    sh:name "geographical coverage"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/spatial>;
+    sh:class <http://purl.org/dc/terms/Location>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/27d9d339>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/19bf8f92> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/prov#wasGeneratedBy>;
+    sh:class <http://www.w3.org/ns/prov#Activity>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/19bf8f92>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-4514d8f4> a sh:PropertyShape;
+    sh:name "documentation"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://xmlns.com/foaf/0.1/page>;
+    sh:class <http://xmlns.com/foaf/0.1/Document>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-4514d8f4>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/2572b553> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/isReferencedBy>;
+    sh:class <http://www.w3.org/ns/dcat#Resource>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/2572b553>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-53127eca> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#hasVersion>;
+    sh:class <http://www.w3.org/ns/dcat#Dataset>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetShape/-53127eca>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#DatasetSeries>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/dcat#DatasetSeries>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape/7d705a94> a sh:PropertyShape;
+    sh:description "This property can be repeated for parallel language versions. It is recommended to provide an indication about the dimensions the Dataset Series evolves."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/description>;
+    sh:datatype rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape/7d705a94>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape/-16f84a15> a sh:PropertyShape;
+    sh:name "modification date"@en;
+    sh:description "This is not equal to the most recent modified dataset in the collection of the dataset series."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/modified>;
+    sh:maxCount 1.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape/-16f84a15>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape/-1e4d1cd> a sh:PropertyShape;
+    sh:description "The moment when the dataset series was established as a managed resource. This is not equal to the release date of the oldest dataset in the collection of the dataset series."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/issued>;
+    sh:maxCount 1;
+    sh:datatype xsd:date.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape/-1e4d1cd>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape/11cd7630> a sh:PropertyShape;
+    sh:description "This property can be repeated for parallel language versions of the name."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/title>;
+    sh:datatype rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape/11cd7630>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape/51cce9d> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://data.europa.eu/r5r/applicableLegislation>;
+    sh:class <http://data.europa.eu/eli/ontology#LegalResource>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape/51cce9d>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape/-716ce842> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#contactPoint>;
+    sh:class <http://www.w3.org/2006/vcard/ns#Kind>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape/-716ce842>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape/26d76035> a sh:PropertyShape;
+    sh:description "The frequency of a dataset series is not equal to the frequency of the dataset in the collection."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/accrualPeriodicity>;
+    sh:maxCount 1;
+    sh:class <http://purl.org/dc/terms/Frequency>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape/26d76035>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape/-662672be> a sh:PropertyShape;
+    sh:name "geographical coverage"@en;
+    sh:description "When spatial coverage is a dimension in the dataset series then the spatial coverage of each dataset in the collection should be part of the spatial coverage. In that case, an open ended value is recommended, e.g. EU or a broad bounding box covering the expected values."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/spatial>;
+    sh:class <http://purl.org/dc/terms/Location>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape/-662672be>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape/744db96f> a sh:PropertyShape;
+    sh:description "The publisher of the dataset series may not be the publisher of all datasets.  E.g. a digital archive could take over the publishing of older datasets in the series. "@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/publisher>;
+    sh:maxCount 1;
+    sh:class <http://xmlns.com/foaf/0.1/Agent>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape/744db96f>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape/28134eca> a sh:PropertyShape;
+    sh:description "When temporal coverage is a dimension in the dataset series then the temporal coverage of each dataset in the collection should be part of the temporal coverage. In that case, an open ended value is recommended, e.g. after 2012."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/temporal>;
+    sh:class <http://purl.org/dc/terms/PeriodOfTime>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DatasetSeriesShape/28134eca>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#Distribution>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/dcat#Distribution>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-71614c95> a sh:PropertyShape;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/dcat#byteSize>;
+    sh:maxCount 1;
+    sh:datatype xsd:nonNegativeInteger.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-71614c95>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-5c86f731> a sh:PropertyShape;
+    sh:description "This property can be repeated for parallel language versions of the description."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/description>;
+    sh:datatype rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-5c86f731>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/5e4e7636> a sh:PropertyShape;
+    sh:name "modification date"@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/modified>;
+    sh:maxCount 1;
+    sh:datatype xsd:date.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/5e4e7636>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/17f7b118> a sh:PropertyShape;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/issued>;
+    sh:maxCount 1;
+    sh:datatype xsd:date.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/17f7b118>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-1e17a302> a sh:PropertyShape;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/dcat#spatialResolutionInMeters>;
+    sh:maxCount 1;
+    sh:datatype xsd:decimal.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-1e17a302>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/57ca9dc8> a sh:PropertyShape;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/dcat#temporalResolution>;
+    sh:maxCount 1;
+    sh:datatype xsd:duration.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/57ca9dc8>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/5e982cab> a sh:PropertyShape;
+    sh:description "This property can be repeated for parallel language versions of the description."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/title>;
+    sh:datatype rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/5e982cab>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/e9a52ae> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#accessService>;
+    sh:class <http://www.w3.org/ns/dcat#DataService>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/e9a52ae>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-5c1e1411> a sh:PropertyShape;
+    sh:description "The resource at the access URL may contain information about how to get the Dataset."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#accessURL>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-5c1e1411>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/327aa498> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://data.europa.eu/r5r/applicableLegislation>;
+    sh:class <http://data.europa.eu/eli/ontology#LegalResource>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/327aa498>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-7c23e09d> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://data.europa.eu/r5r/availability>;
+    sh:maxCount 1;
+    sh:class <http://www.w3.org/2004/02/skos/core#Concept>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-7c23e09d>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-1aa8d484> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://spdx.org/rdf/terms#checksum>;
+    sh:maxCount 1;
+    sh:class <http://spdx.org/rdf/terms#Checksum>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-1aa8d484>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-42d716aa> a sh:PropertyShape;
+    sh:description "It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#compressFormat>;
+    sh:maxCount 1;
+    sh:class <http://purl.org/dc/terms/MediaType>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-42d716aa>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/58eb4548> a sh:PropertyShape;
+    sh:name "documentation"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://xmlns.com/foaf/0.1/page>;
+    sh:class <http://xmlns.com/foaf/0.1/Document>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/58eb4548>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-33ebef2d> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#downloadURL>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-33ebef2d>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/68e8ba0c> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/format>;
+    sh:maxCount 1;
+    sh:class <http://purl.org/dc/terms/MediaTypeOrExtent>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/68e8ba0c>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-270b4b4> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/odrl/2/hasPolicy>;
+    sh:maxCount 1;
+    sh:class <http://www.w3.org/ns/odrl/2/Policy>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-270b4b4>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-2df11c6c> a sh:PropertyShape;
+    sh:name "language"@en;
+    sh:description "This property can be repeated if the metadata is provided in multiple languages."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/language>;
+    sh:class <http://purl.org/dc/terms/LinguisticSystem>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-2df11c6c>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/1b273c17> a sh:PropertyShape;
+    sh:name "licence"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/license>;
+    sh:maxCount 1;
+    sh:class <http://purl.org/dc/terms/LicenseDocument>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/1b273c17>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-47e26413> a sh:PropertyShape;
+    sh:name "linked schemas"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/conformsTo>;
+    sh:class <http://purl.org/dc/terms/Standard>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-47e26413>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-74b6bbd> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#mediaType>;
+    sh:maxCount 1;
+    sh:class <http://purl.org/dc/terms/MediaType>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-74b6bbd>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-2d28b73c> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#packageFormat>;
+    sh:maxCount 1;
+    sh:class <http://purl.org/dc/terms/MediaType>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-2d28b73c>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-15d9f887> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/rights>;
+    sh:class <http://purl.org/dc/terms/RightsStatement>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-15d9f887>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-5748bdc3> a sh:PropertyShape;
+    sh:description "It MUST take one of the values Completed, Deprecated, Under Development, Withdrawn."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/adms#status>;
+    sh:maxCount 1;
+    sh:class <http://www.w3.org/2004/02/skos/core#Concept>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:DistributionShape/-5748bdc3>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:RelationshipShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#Relationship>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/dcat#Relationship>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:RelationshipShape/684d5d6f> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#hadRole>;
+    sh:class <http://www.w3.org/ns/dcat#Role>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:RelationshipShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:RelationshipShape/684d5d6f>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:RelationshipShape/3662221f> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/relation>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:RelationshipShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcat:RelationshipShape/3662221f>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:ResourceShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#CataloguedResource>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/dcat#Resource>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcat:RoleShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#Role>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/dcat#Role>.
+
+<https://w3id.org/materialsDCAT-AP/profile#foaf:AgentShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#Agent>;
+    sh:closed false;
+    sh:targetClass <http://xmlns.com/foaf/0.1/Agent>.
+
+<https://w3id.org/materialsDCAT-AP/profile#foaf:AgentShape/199acd68> a sh:PropertyShape;
+    sh:description "This property can be repeated for different versions of the name (e.g. the name in different languages)."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://xmlns.com/foaf/0.1/name>;
+    sh:minCount 1;
+    sh:datatype rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#foaf:AgentShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#foaf:AgentShape/199acd68>.
+
+<https://w3id.org/materialsDCAT-AP/profile#foaf:AgentShape/-57c512fa> a sh:PropertyShape;
+    sh:name "type"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/type>;
+    sh:maxCount 1;
+    sh:class <http://www.w3.org/2004/02/skos/core#Concept>.
+
+<https://w3id.org/materialsDCAT-AP/profile#foaf:AgentShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#foaf:AgentShape/-57c512fa>.
+
+<https://w3id.org/materialsDCAT-AP/profile#skos:ConceptShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#Concept>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/2004/02/skos/core#Concept>.
+
+<https://w3id.org/materialsDCAT-AP/profile#skos:ConceptShape/396dce27> a sh:PropertyShape;
+    sh:description "This property can be repeated for parallel language versions of the label."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/2004/02/skos/core#prefLabel>;
+    sh:minCount 1;
+    sh:datatype rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#skos:ConceptShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#skos:ConceptShape/396dce27>.
+
+<https://w3id.org/materialsDCAT-AP/profile#eli:LegalResourceShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#LegalResource>;
+    sh:closed false;
+    sh:targetClass <http://data.europa.eu/eli/ontology#LegalResource>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:LocationShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#Location>;
+    sh:closed false;
+    sh:targetClass <http://purl.org/dc/terms/Location>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:LocationShape/-41da6870> a sh:PropertyShape;
+    sh:name "bbox"@en, "quadro di delimitazione"@it, "cuadro delimitador"@es, "ohraničení oblasti"@cs, "bounding box"@da;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/dcat#bbox>;
+    sh:maxCount 1.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:LocationShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcterms:LocationShape/-41da6870>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:LocationShape/66d7e659> a sh:PropertyShape;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/dcat#centroid>;
+    sh:maxCount 1.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:LocationShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcterms:LocationShape/66d7e659>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:LocationShape/-6a1737b3> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/locn#geometry>;
+    sh:maxCount 1;
+    sh:class <http://www.w3.org/ns/locn#Geometry>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:LocationShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcterms:LocationShape/-6a1737b3>.
+
+<https://w3id.org/materialsDCAT-AP/profile#foaf:DocumentShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#Document>;
+    sh:closed false;
+    sh:targetClass <http://xmlns.com/foaf/0.1/Document>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:LinguisticSystemShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#LinguisticSystem>;
+    sh:closed false;
+    sh:targetClass <http://purl.org/dc/terms/LinguisticSystem>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:LicenseDocumentShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#LicenceDocument>;
+    sh:closed false;
+    sh:targetClass <http://purl.org/dc/terms/LicenseDocument>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:LicenseDocumentShape/-4efe3633> a sh:PropertyShape;
+    sh:name "type"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/type>;
+    sh:class <http://www.w3.org/2004/02/skos/core#Concept>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:LicenseDocumentShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcterms:LicenseDocumentShape/-4efe3633>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:RightsStatementShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#RightsStatement>;
+    sh:closed false;
+    sh:targetClass <http://purl.org/dc/terms/RightsStatement>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:StandardShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#Standard>;
+    sh:closed false;
+    sh:targetClass <http://purl.org/dc/terms/Standard>.
+
+<https://w3id.org/materialsDCAT-AP/profile#rdfs:ResourceShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#rdfs-Resource>;
+    sh:closed false;
+    sh:targetClass rdfs:Resource.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:ProvenanceStatementShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#ProvenanceStatement>;
+    sh:closed false;
+    sh:targetClass <http://purl.org/dc/terms/ProvenanceStatement>.
+
+<https://w3id.org/materialsDCAT-AP/profile#http://www.w3.org/ns/odrl/2/PolicyShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#Policy>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/odrl/2/Policy>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:PeriodOfTimeShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#PeriodOfTime>;
+    sh:closed false;
+    sh:targetClass <http://purl.org/dc/terms/PeriodOfTime>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:PeriodOfTimeShape/d57d6ec> a sh:PropertyShape;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/dcat#endDate>;
+    sh:maxCount 1;
+    sh:datatype xsd:date.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:PeriodOfTimeShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcterms:PeriodOfTimeShape/d57d6ec>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:PeriodOfTimeShape/-4c82a84d> a sh:PropertyShape;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/dcat#startDate>;
+    sh:maxCount 1;
+    sh:datatype xsd:date.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:PeriodOfTimeShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcterms:PeriodOfTimeShape/-4c82a84d>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:PeriodOfTimeShape/1ba70e27> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/2006/time#hasBeginning>;
+    sh:maxCount 1;
+    sh:class <http://www.w3.org/2006/time#Instant>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:PeriodOfTimeShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcterms:PeriodOfTimeShape/1ba70e27>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:PeriodOfTimeShape/25f024a5> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/2006/time#hasEnd>;
+    sh:maxCount 1;
+    sh:class <http://www.w3.org/2006/time#Instant>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:PeriodOfTimeShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#dcterms:PeriodOfTimeShape/25f024a5>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:MediaTypeOrExtentShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#MediaTypeOrExtent>;
+    sh:closed false;
+    sh:targetClass <http://purl.org/dc/terms/MediaTypeOrExtent>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:MediaTypeShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#MediaType>;
+    sh:closed false;
+    sh:targetClass <http://purl.org/dc/terms/MediaType>.
+
+<https://w3id.org/materialsDCAT-AP/profile#adms:IdentifierShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#Identifier>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/adms#Identifier>.
+
+<https://w3id.org/materialsDCAT-AP/profile#adms:IdentifierShape/1b764701> a sh:PropertyShape;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/2004/02/skos/core#notation>;
+    sh:maxCount 1;
+    sh:minCount 1.
+
+<https://w3id.org/materialsDCAT-AP/profile#adms:IdentifierShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#adms:IdentifierShape/1b764701>.
+
+<https://w3id.org/materialsDCAT-AP/profile#locn:GeometryShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#Geometry>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/locn#Geometry>.
+
+<https://w3id.org/materialsDCAT-AP/profile#dcterms:FrequencyShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#Frequency>;
+    sh:closed false;
+    sh:targetClass <http://purl.org/dc/terms/Frequency>.
+
+<https://w3id.org/materialsDCAT-AP/profile#skos:ConceptSchemeShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#ConceptScheme>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/2004/02/skos/core#ConceptScheme>.
+
+<https://w3id.org/materialsDCAT-AP/profile#skos:ConceptSchemeShape/7ca1bd2> a sh:PropertyShape;
+    sh:name "title"@en;
+    sh:description "May be repeated for different versions of the name."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/title>;
+    sh:minCount 1;
+    sh:datatype rdf:langString.
+
+<https://w3id.org/materialsDCAT-AP/profile#skos:ConceptSchemeShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#skos:ConceptSchemeShape/7ca1bd2>.
+
+<https://w3id.org/materialsDCAT-AP/profile#spdx:ChecksumAlgorithmShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#ChecksumAlgorithm>;
+    sh:closed false;
+    sh:targetClass <http://spdx.org/rdf/terms#ChecksumAlgorithm>.
+
+<https://w3id.org/materialsDCAT-AP/profile#prov:AttributionShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#Attribution>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/prov#Attribution>.
+
+<https://w3id.org/materialsDCAT-AP/profile#prov:ActivityShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#Activity>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/prov#Activity>.
+
+<https://w3id.org/materialsDCAT-AP/profile#vcard:KindShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#Kind>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/2006/vcard/ns#Kind>.
+
+<https://w3id.org/materialsDCAT-AP/profile#spdx:ChecksumShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#Checksum>;
+    sh:closed false;
+    sh:targetClass <http://spdx.org/rdf/terms#Checksum>.
+
+<https://w3id.org/materialsDCAT-AP/profile#spdx:ChecksumShape/79e4b12d> a sh:PropertyShape;
+    sh:nodeKind sh:Literal;
+    sh:path <http://spdx.org/rdf/terms#checksumValue>;
+    sh:maxCount 1;
+    sh:datatype xsd:hexBinary.
+
+<https://w3id.org/materialsDCAT-AP/profile#spdx:ChecksumShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#spdx:ChecksumShape/79e4b12d>.
+
+<https://w3id.org/materialsDCAT-AP/profile#spdx:ChecksumShape/-4bdce4b8> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://spdx.org/rdf/terms#algorithm>;
+    sh:maxCount 1;
+    sh:class <http://spdx.org/rdf/terms#ChecksumAlgorithm>.
+
+<https://w3id.org/materialsDCAT-AP/profile#spdx:ChecksumShape> sh:property <https://w3id.org/materialsDCAT-AP/profile#spdx:ChecksumShape/-4bdce4b8>.
+
+<https://w3id.org/materialsDCAT-AP/profile#time:InstantShape> a sh:NodeShape;
+    rdfs:seeAlso <https://w3id.org/materialsDCAT-AP/profile#Instant>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/2006/time#Instant>.
+
