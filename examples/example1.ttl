@@ -1,0 +1,44 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+
+@prefix statdcatap: <http://data.europa.eu/s1n/> .
+@prefix materialsdcatap: <https://w3id.org/materialsdcap#> . # TEMPORARY!
+
+<#ExampleDataset1> a dcat:Dataset ;
+    dcterms:title "Example Dataset 1"@en ;
+    dcterms:description "This is an example dataset."@en ;
+
+# -------------- MaterialsDCAT-AP material
+    # Do we recommend listing all values (redundancy) or just the most specific one?
+    # MatVoc > Pure metal
+    materialsdcatap:material <https://matvoc.wikibase.cloud/entity/Q742> ;
+    # MatVoc > Pure metal > Gold 
+    materialsdcatap:material <https://matvoc.wikibase.cloud/entity/Q1308> ;
+
+# -------------- MaterialsDCAT-AP what was measured
+    # Measure: FAIRmat taxonomy v2: Layer thickness of a quasi-2D material.
+    statdcatap:measure <http://fairmat-nfdi.eu/taxonomy/LayerThickness> ;
+
+    # Unit of Measurement: QUDT: Millimeter
+    statdcatap:statUnitMeasure <http://qudt.org/vocab/unit/MilliM> ;
+
+# -------------- MaterialsDCAT-AP activity
+    
+    # NIST: gold-sputter coating
+    materialsdcatap:activity <https://data.nist.gov/od/dm/nmrr/vocab/?tema=325> ;
+    # NIST: fracture behavior
+    materialsdcatap:activity <https://data.nist.gov/od/dm/nmrr/vocab/?tema=157> ;
+
+# -------------- MaterialsDCAT-AP application
+
+    materialsdcatap:application <.....Batteries.....> ;
+
+# -------------- Rest of DCAT-AP -------------
+    dcat:distribution <#ExampleDataset1Distribution1> .
+
+<#ExampleDataset1Distribution1> a dcat:Distribution ;
+    dcterms:title "Example Dataset 1 Distribution 1"@en ;
+    dcat:downloadURL <http://example.com/dataset1/distribution1.csv> ;
+    dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dcterms:license <http://creativecommons.org/licenses/by/4.0/> .
